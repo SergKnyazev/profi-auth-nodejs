@@ -1,0 +1,25 @@
+{
+  "name": "profi_auth_nodejs",
+  "version": "1.0.0",
+  "description": "auth_nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergKnyazev/profi_auth_nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergKnyazev/profi_auth_nodejs/issues"
+  },
+  "homepage": "https://github.com/SergKnyazev/profi_auth_nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12"
+  }
+}
