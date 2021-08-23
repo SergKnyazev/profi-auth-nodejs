@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const authRouter = require('./authRouter');
 const PORT = process.env.PORT || 5000;
 const URI = 'mongodb+srv://qwerty:qwerty123@cluster1.kgwlq.mongodb.net/auth_roles?retryWrites=true&w=majority';
 const MONGO_OPTIONS = {
@@ -10,6 +11,7 @@ const MONGO_OPTIONS = {
 const app = express();
 
 app.use(express.json());
+app.use('/auth', authRouter);
 
 const startServer = () => {
   app.listen(() => {
