@@ -39,4 +39,7 @@ db.connect({
 
 //6:02
 
+//16:18 
+add a schema and models User and Role
+
 
