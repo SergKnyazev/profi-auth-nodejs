@@ -42,4 +42,7 @@ db.connect({
 //16:18 
 add a schema and models User and Role
 
+//23:47
+ add validation and jwt-token
+
 
