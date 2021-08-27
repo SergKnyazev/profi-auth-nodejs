@@ -1,8 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const authRouter = require('./authRouter');
+require('dotenv').config();
+
 const PORT = process.env.PORT || 5000;
-const URI = 'mongodb+srv://qwerty:qwerty123@cluster1.kgwlq.mongodb.net/auth_roles?retryWrites=true&w=majority';
+const URI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}/auth_roles?retryWrites=true&w=majority`;
+// const URI = 'mongodb+srv://qwerty:qwerty123@cluster1.kgwlq.mongodb.net/auth_roles?retryWrites=true&w=majority';
 const MONGO_OPTIONS = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
